@@ -12,6 +12,11 @@
 		60FDA1241F3587D4007588C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FDA1221F3587D4007588C7 /* Main.storyboard */; };
 		60FDA1261F3587D4007588C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60FDA1251F3587D4007588C7 /* Assets.xcassets */; };
 		60FDA1291F3587D4007588C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FDA1271F3587D4007588C7 /* LaunchScreen.storyboard */; };
+		60FDA1351F35DEE8007588C7 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FDA1301F35DEE8007588C7 /* APIKit.framework */; };
+		60FDA1361F35DEE8007588C7 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FDA1311F35DEE8007588C7 /* Himotoki.framework */; };
+		60FDA1371F35DEE8007588C7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FDA1321F35DEE8007588C7 /* Result.framework */; };
+		60FDA1381F35DEE8007588C7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FDA1331F35DEE8007588C7 /* RxCocoa.framework */; };
+		60FDA1391F35DEE8007588C7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FDA1341F35DEE8007588C7 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		60FDA1251F3587D4007588C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60FDA1281F3587D4007588C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60FDA12A1F3587D4007588C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60FDA1301F35DEE8007588C7 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		60FDA1311F35DEE8007588C7 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		60FDA1321F35DEE8007588C7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		60FDA1331F35DEE8007588C7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		60FDA1341F35DEE8007588C7 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60FDA1391F35DEE8007588C7 /* RxSwift.framework in Frameworks */,
+				60FDA1381F35DEE8007588C7 /* RxCocoa.framework in Frameworks */,
+				60FDA1371F35DEE8007588C7 /* Result.framework in Frameworks */,
+				60FDA1361F35DEE8007588C7 /* Himotoki.framework in Frameworks */,
+				60FDA1351F35DEE8007588C7 /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +53,7 @@
 		60FDA1121F3587D4007588C7 = {
 			isa = PBXGroup;
 			children = (
+				60FDA13A1F35DEEE007588C7 /* Frameworks */,
 				60FDA11D1F3587D4007588C7 /* RepositorySample */,
 				60FDA11C1F3587D4007588C7 /* Products */,
 			);
@@ -64,6 +80,18 @@
 			path = RepositorySample;
 			sourceTree = "<group>";
 		};
+		60FDA13A1F35DEEE007588C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60FDA1301F35DEE8007588C7 /* APIKit.framework */,
+				60FDA1311F35DEE8007588C7 /* Himotoki.framework */,
+				60FDA1321F35DEE8007588C7 /* Result.framework */,
+				60FDA1331F35DEE8007588C7 /* RxCocoa.framework */,
+				60FDA1341F35DEE8007588C7 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +102,7 @@
 				60FDA1171F3587D4007588C7 /* Sources */,
 				60FDA1181F3587D4007588C7 /* Frameworks */,
 				60FDA1191F3587D4007588C7 /* Resources */,
+				60FDA13B1F35DF23007588C7 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -131,6 +160,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60FDA13B1F35DF23007588C7 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60FDA1171F3587D4007588C7 /* Sources */ = {
@@ -262,6 +313,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RepositorySample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.RepositorySample;
@@ -275,6 +330,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q3N95Y73WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RepositorySample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yura.RepositorySample;

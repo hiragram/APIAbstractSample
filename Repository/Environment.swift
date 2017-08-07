@@ -16,11 +16,11 @@ enum Environment {
   private var baseURL: String {
     switch self {
     case .production:
-      return "https://prod.hoge.jp"
+      return "https://google.jp"
     case .staging:
-      return "https://stg.hoge.jp"
+      return "https://google.jp"
     case .mock:
-      return "https://mock.hoge.jp"
+      return "https://google.jp"
     }
   }
 

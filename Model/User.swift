@@ -10,8 +10,8 @@ import Foundation
 import Himotoki
 
 public struct User: Decodable {
-  var id: Int
-  var name: String
+  public var id: Int
+  public var name: String
 
   public static func decode(_ e: Extractor) throws -> User {
     return try User.init(

@@ -30,6 +30,7 @@
 		60FDA16C1F380862007588C7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FDA16B1F380862007588C7 /* Response.swift */; };
 		60FDA16E1F380885007588C7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FDA16D1F380885007588C7 /* Request.swift */; };
 		60FDA1701F38089B007588C7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FDA16F1F38089B007588C7 /* Environment.swift */; };
+		60FDA1721F380985007588C7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FDA1711F380985007588C7 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		60FDA16B1F380862007588C7 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		60FDA16D1F380885007588C7 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		60FDA16F1F38089B007588C7 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		60FDA1711F380985007588C7 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			children = (
 				60FDA11E1F3587D4007588C7 /* AppDelegate.swift */,
 				60FDA1201F3587D4007588C7 /* ViewController.swift */,
+				60FDA1711F380985007588C7 /* ViewModel.swift */,
 				60FDA1221F3587D4007588C7 /* Main.storyboard */,
 				60FDA1251F3587D4007588C7 /* Assets.xcassets */,
 				60FDA1271F3587D4007588C7 /* LaunchScreen.storyboard */,
@@ -385,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60FDA1211F3587D4007588C7 /* ViewController.swift in Sources */,
+				60FDA1721F380985007588C7 /* ViewModel.swift in Sources */,
 				60FDA11F1F3587D4007588C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

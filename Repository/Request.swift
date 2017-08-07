@@ -8,6 +8,7 @@
 
 import Foundation
 import APIKit
+import Himotoki
 
 struct GenericRequest<Endpoint: EndpointDefinition>: Request {
   typealias Response = Endpoint.Response.Result
@@ -24,6 +25,12 @@ struct GenericRequest<Endpoint: EndpointDefinition>: Request {
   }
 
   func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Endpoint.Response.Result {
-    fatalError()
+    guard let jsonDict = object as? [String: Any] else {
+      fatalError()
+    }
+    guard let results = jsonDict["results"] as? [Any] else {
+      fatalError()
+    }
+    return try Endpoint.Response.init(json: results).result
   }
 }
